@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "169474986127",
+    "project_id": "identity-flutter",
+    "storage_bucket": "identity-flutter.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:169474986127:android:4897ca2240fac0063b60fa",
+        "android_client_info": {
+          "package_name": "com.example.cep_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfoDOXY929MkOHet1RfEJimA8ZMHNufh0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:169474986127:android:615ad7db479854a03b60fa",
+        "android_client_info": {
+          "package_name": "com.example.identity_flutter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfoDOXY929MkOHet1RfEJimA8ZMHNufh0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
