@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false, // Removes the debug mode banner
       title: 'Identity Flutter',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Color.fromRGBO(0, 51, 153, 1),),
         useMaterial3: true,
       ),
       routerConfig: AppRoutes.router,
