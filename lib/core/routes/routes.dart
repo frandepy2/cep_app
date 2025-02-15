@@ -1,5 +1,6 @@
 import 'package:cep_app/features/schedule/presentation/screens/add_schedule.dart';
 import 'package:cep_app/features/schedule/presentation/screens/schedule_screen.dart';
+import 'package:cep_app/features/schedule/presentation/screens/select_subjects.dart';
 import 'package:go_router/go_router.dart';
 import 'package:cep_app/screens/home_screen.dart';
 import 'package:cep_app/screens/login_screen.dart';
@@ -43,6 +44,12 @@ class AppRoutes {
       GoRoute(
         path: AddScheduleScreen.routename,
         builder: (context, state) => const AddScheduleScreen(),
+      ),
+      GoRoute(
+        path: SelectSubjectScreen.routename,
+        builder: (context, state) =>  SelectSubjectScreen(
+          selected: state.extra as String,
+        ),
       ),
     ],
   );
