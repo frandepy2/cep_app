@@ -41,6 +41,14 @@ dev_dependencies:
   flutter_lints: ^5.0.0
   build_runner: ^2.4.15
   injectable_generator: ^2.7.0
+  flutter_launcher_icons: ^0.14.3
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/cep.png"
+  adaptive_icon_background: "assets/icon/adaptive_icon_background.png" # Solo para Android
+  adaptive_icon_foreground: "assets/icon/adaptive_icon_foreground.png" # Solo para Android
 
 flutter:
   uses-material-design: true
