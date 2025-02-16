@@ -39,10 +39,12 @@ class _AddScheduleScreenState extends State<AddScheduleScreen> {
 
         if (state.status == ScheduleStatus.error) {
           OverlayLoader.hide();
-          SnackBar(
-            content: Text(state.errorMessage!),
-            duration: const Duration(seconds: 3),
-            backgroundColor: Colors.red,
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              content: Text(state.errorMessage!),
+              duration: const Duration(seconds: 3),
+              backgroundColor: Colors.red[300],
+            ),
           );
         }
       },
