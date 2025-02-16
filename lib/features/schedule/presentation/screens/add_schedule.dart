@@ -1,3 +1,4 @@
+import 'package:cep_app/core/common/widgets/overlay_loader.dart';
 import 'package:cep_app/core/injectable/get_it_injector.dart';
 import 'package:cep_app/features/schedule/presentation/bloc/schedule_bloc.dart';
 import 'package:cep_app/features/schedule/presentation/screens/select_subjects.dart';
@@ -29,10 +30,15 @@ class _AddScheduleScreenState extends State<AddScheduleScreen> {
     return BlocListener<ScheduleBloc, ScheduleState>(
       listener: (context, state) {
         if (state.status == ScheduleStatus.scheduleSelected) {
+          OverlayLoader.hide();
           context.push(SelectSubjectScreen.routename);
+        }
+        if (state.status == ScheduleStatus.loading) {
+          OverlayLoader.show(context);
         }
 
         if (state.status == ScheduleStatus.error) {
+          OverlayLoader.hide();
           SnackBar(
             content: Text(state.errorMessage!),
             duration: const Duration(seconds: 3),
