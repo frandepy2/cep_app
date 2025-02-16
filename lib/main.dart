@@ -1,8 +1,10 @@
 import 'package:cep_app/core/injectable/get_it_injector.dart';
+import 'package:cep_app/features/schedule/presentation/bloc/schedule_bloc.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:cep_app/core/routes/routes.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -12,7 +14,9 @@ void main() async {
   configureDependencies();
 
   SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]).then((_) {
-    runApp(const MyApp());
+    runApp(MultiBlocProvider(providers: [
+      BlocProvider(create:(context) => getItInjector.get<ScheduleBloc>()),
+    ], child: const MyApp()));
   });
 }
 

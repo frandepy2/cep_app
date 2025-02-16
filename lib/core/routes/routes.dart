@@ -6,8 +6,8 @@ import 'package:cep_app/features/home/presentation/screens/home_screen.dart';
 import 'package:cep_app/features/auth/presentation/screens/login_screen.dart';
 import 'package:cep_app/features/home/presentation/screens/nav_screen.dart';
 import 'package:cep_app/features/qr/presentation/screens/qr_scanner_screen.dart';
-import 'package:cep_app/features/onboarding/form/register_screen.dart';
-import 'package:cep_app/features/profile/user_profile_screen.dart';
+import 'package:cep_app/features/onboarding/form/presentation/screens/register_screen.dart';
+import 'package:cep_app/features/profile/presentation/screens/user_profile_screen.dart';
 
 class AppRoutes {
   static final GoRouter router = GoRouter(
@@ -48,7 +48,6 @@ class AppRoutes {
       GoRoute(
         path: SelectSubjectScreen.routename,
         builder: (context, state) =>  SelectSubjectScreen(
-          selected: state.extra as String,
         ),
       ),
     ],

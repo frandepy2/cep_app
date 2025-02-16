@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'package:cep_app/features/onboarding/biometric/biometric_control_screen.dart';
+import 'package:cep_app/features/onboarding/biometric/presentation/biometric_control_screen.dart';
 import 'package:cep_app/features/auth/presentation/screens/login_screen.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';

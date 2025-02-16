@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:cep_app/features/home/presentation/screens/home_screen.dart';
 import 'package:cep_app/features/qr/presentation/screens/qr_scanner_screen.dart';
-import 'package:cep_app/features/profile/user_profile_screen.dart';
+import 'package:cep_app/features/profile/presentation/screens/user_profile_screen.dart';
 
 
 
