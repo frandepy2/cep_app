@@ -68,10 +68,16 @@ class _SelectSubjectScreenState extends State<SelectSubjectScreen> {
         itemBuilder: (context, index) {
           final semestre = horario!.semestres![index];
           return ExpansionTile(
+            trailing: Checkbox(value: false, onChanged: (value){
+              
+            }),
             title: Text(semestre.semestre ?? 'Semestre Desconocido'),
             children: semestre.materias?.map((materia) {
               return ListTile(
                 title: Text(materia.nombre ?? 'Materia Desconocida'),
+                trailing: Checkbox(value: true, onChanged: (value){
+
+                }),
                 onTap: () {
                   // Aquí podrías mostrar más detalles de la materia
                 },

@@ -1,5 +1,5 @@
 name: cep_app
-description: "A new Flutter project."
+description: "Proyecto para el Centro de Estudiantes de  la Politecnica"
 publish_to: 'none'
 version: 0.1.0
 
@@ -24,14 +24,22 @@ dependencies:
   freezed_annotation: ^2.4.4
   json_annotation: ^4.9.0
   json_serializable: ^6.9.4
-  hive_flutter: ^1.1.0
+  shared_preferences: ^2.5.2
+  freezed: ^2.5.8
+  sqflite: ^2.4.1
+  path_provider: ^2.1.5
+  flutter_bloc: ^9.0.0
+  get_it: ^8.0.3
+  injectable: ^2.5.0
+  either_dart: ^1.0.0
+
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^5.0.0
   build_runner: ^2.4.15
-  freezed: ^2.5.8
+  injectable_generator: ^2.7.0
 
 flutter:
   uses-material-design: true

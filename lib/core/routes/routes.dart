@@ -2,12 +2,12 @@ import 'package:cep_app/features/schedule/presentation/screens/add_schedule.dart
 import 'package:cep_app/features/schedule/presentation/screens/schedule_screen.dart';
 import 'package:cep_app/features/schedule/presentation/screens/select_subjects.dart';
 import 'package:go_router/go_router.dart';
-import 'package:cep_app/screens/home_screen.dart';
-import 'package:cep_app/screens/login_screen.dart';
-import 'package:cep_app/screens/nav_screen.dart';
-import 'package:cep_app/screens/qr_scanner_screen.dart';
-import 'package:cep_app/screens/register_screen.dart';
-import 'package:cep_app/screens/user_profile_screen.dart';
+import 'package:cep_app/features/home/presentation/screens/home_screen.dart';
+import 'package:cep_app/features/auth/presentation/screens/login_screen.dart';
+import 'package:cep_app/features/home/presentation/screens/nav_screen.dart';
+import 'package:cep_app/features/qr/presentation/screens/qr_scanner_screen.dart';
+import 'package:cep_app/features/onboarding/form/register_screen.dart';
+import 'package:cep_app/features/profile/user_profile_screen.dart';
 
 class AppRoutes {
   static final GoRouter router = GoRouter(
